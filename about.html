@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - Rio Kindergruppe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo-Bereich -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Rio Kindergruppe Logo"></a>
+            </div>
+        </div>
+        <div class="hero small">
+            <h1>Über uns</h1>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html" class="active">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Unsere Mission -->
+    <section class="mission">
+        <div class="container">
+            <h2>Unsere Mission</h2>
+            <p>Wir fördern die Entwicklung der Kinder durch kreative Aktivitäten, Spiele und Bildung.</p>
+        </div>
+    </section>
+
+    <!-- Unser Team -->
+    <section class="team">
+        <div class="container">
+            <h2>Unser Team</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="images/teacher1.jpg" alt="Foto von Frau Müller, der Leiterin der Rio Kindergruppe">
+                    <h3>Frau Müller</h3>
+                    <p>Leiterin der Rio Kindergruppe</p>
+                </div>
+                <div class="member">
+                    <img src="images/teacher2.jpg" alt="Foto von Herr Schmidt, Erzieher und Sportlehrer">
+                    <h3>Herr Schmidt</h3>
+                    <p>Erzieher und Sportlehrer</p>
+                </div>
+                <div class="member">
+                    <img src="images/teacher3.jpg" alt="Foto von Frau Becker, Kreativpädagogin">
+                    <h3>Frau Becker</h3>
+                    <p>Kreativpädagogin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer mit Kontaktinformationen -->
+    <footer>
+        <section class="contact-info">
+            <div class="container">
+                <h2>Kontaktinformationen</h2>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=SCHÖNBRUNNER+STR.+137,+Wien,+Austria" target="_blank">SCHÖNBRUNNER STR. 137, Wien, Austria</a></p>
+                <p><a href="tel:+436608320850">+43 660 8320850</a></p>
+                <p><a href="mailto:office@kindergrupperio.at">office@kindergrupperio.at</a></p>
+            </div>
+        </section>
+
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="datenschutzerklärung.html">Datenschutzerklärung</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
+            <p class="rechte">&copy; 2024 Rio Kindergruppe. Alle Rechte vorbehalten.</p>
+
+            <!-- Scroll to Top Button -->
+            <button onclick="scrollToTop()" id="scrollTopBtn" class="scroll-top">↑</button>
+        </div>
+    </footer>
+
+    <!-- JavaScript zum Scrollen nach oben -->
+    <script>
+        // Scroll to Top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show the button after scrolling 100px
+        window.onscroll = function() {
+            let scrollBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollBtn.classList.add("show");
+            } else {
+                scrollBtn.classList.remove("show");
+            }
+        };
+    </script>
+</body>
+</html>

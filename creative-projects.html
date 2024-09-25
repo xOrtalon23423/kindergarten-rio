@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreative Projekte - Rio Kindergruppe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        /* Styling der Galerie */
+        .projects {
+            padding: 40px 0;
+            background: #f7f7f7;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem; /* Größere Schriftgröße für die Überschrift */
+        }
+
+        /* Styling der Galerie-Bilder */
+        .projects-gallery {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .projects-gallery .project-item {
+            flex: 0 0 250px;
+            margin-right: 20px;
+        }
+
+        .projects-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .projects-gallery img:hover {
+            transform: scale(1.05); /* Leichtes Vergrößern beim Hover-Effekt */
+        }
+
+        /* Anpassungen für den Slider */
+        .slick-prev, .slick-next {
+            background-color: #0066cc;
+            border-radius: 50%;
+            color: white;
+        }
+
+        .slick-prev:hover, .slick-next:hover {
+            background-color: #004c99;
+        }
+
+        /* Scroll-to-Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-top.show {
+            display: block;
+            opacity: 1;
+        }
+
+        .scroll-top:hover {
+            transform: scale(1.1);
+            background-color: #004c99;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo-Bereich -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Rio Kindergruppe Logo"></a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="">
+        <section class="projects">
+            <div class="container">
+                <h2>Kreative Projekte</h2>
+                <p>Bei der Rio Kindergruppe haben wir verschiedene kreative Projekte, bei denen die Kinder ihre Fantasie und Teamarbeit entwickeln können. Hier sind einige unserer letzten Projekte:</p>
+                <div class="projects-gallery slider">
+                    <div class="project-item">
+                        <a href="images/project1.jpg" data-lightbox="projects-gallery" data-title="Kreatives Basteln 1">
+                            <img src="images/project1.jpg" alt="Kreatives Basteln 1">
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="images/project2.jpg" data-lightbox="projects-gallery" data-title="Kreatives Basteln 2">
+                            <img src="images/project2.jpg" alt="Kreatives Basteln 2">
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="images/project3.jpg" data-lightbox="projects-gallery" data-title="Kreatives Basteln 3">
+                            <img src="images/project3.jpg" alt="Kreatives Basteln 3">
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="images/project4.jpg" data-lightbox="projects-gallery" data-title="Kreatives Basteln 4">
+                            <img src="images/project4.jpg" alt="Kreatives Basteln 4">
+                        </a>
+                    </div>
+                    <!-- Weitere Bilder können hier hinzugefügt werden -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+            <div class="container">
+                <br>
+                <h2>Kontaktinformationen</h2>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=SCHÖNBRUNNER+STR.+137,+Wien,+Austria" target="_blank">SCHÖNBRUNNER STR. 137, Wien, Austria</a></p>
+                <p><a href="tel:+436608320850">+43 660 8320850</a></p>
+                <p><a href="mailto:office@kindergrupperio.at">office@kindergrupperio.at</a></p>
+                <br>
+            </div>
+        </section>
+        <div class="container">
+            
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="datenschutzerklärung.html">Datenschutzerklärung</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+                <!-- Scroll to Top Button -->
+                <button onclick="scrollToTop()" id="scrollTopBtn" class="scroll-top">↑</button>
+                
+            </nav>
+        </div><br><p class="rechte">&copy; 2024 Rio Kindergruppe. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Scripts -->
+    <script>
+        // Slick Slider Initialisierung
+        $(document).ready(function(){
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+        // Scroll to Top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show the button after scrolling 100px
+        window.onscroll = function() {
+            let scrollBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollBtn.classList.add("show");
+            } else {
+                scrollBtn.classList.remove("show");
+            }
+        };
+    </script>
+</body>
+</html>
